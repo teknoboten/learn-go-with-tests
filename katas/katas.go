@@ -4,6 +4,16 @@ import (
 	"strings"
 )
 
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+func SquareSum(numbers []int) int {
+    // your code here
+	result := 0
+	for _, v := range numbers {
+		result += v*v
+	}
+	return result
+}
+
 func DNAtoRNA(dna string) string {
 	return strings.ReplaceAll(dna, "T", "U")
 }

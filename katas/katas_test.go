@@ -5,6 +5,12 @@ import (
 	"testing"
 )
 
+func TestSquareSum(t *testing.T) {
+	got := SquareSum([]int{1,2,2})
+	want := 9
+	assertInt(t, got, want)
+}
+
 func TestDNAtoRNA(t *testing.T) {
 	got := DNAtoRNA("GCAT")
 	want := "GCAU"
