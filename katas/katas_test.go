@@ -5,6 +5,12 @@ import (
 	"testing"
 )
 
+func TestRemoveChar(t *testing.T){
+	got := RemoveChar("country")
+	want := "ountr"
+	assertString(t, got, want)
+}
+
 func TestSquareSum(t *testing.T) {
 	got := SquareSum([]int{1,2,2})
 	want := 9

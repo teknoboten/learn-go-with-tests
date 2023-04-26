@@ -4,9 +4,17 @@ import (
 	"strings"
 )
 
+// It's pretty straightforward. Your goal is to create a function that removes the first
+//and last characters of a string. You're given one parameter, the original string.
+//You don't have to worry with strings with less than two characters.
+
+func RemoveChar(word string) string {
+	return string(word[1:len(word)-1])
+}
+
+
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
 func SquareSum(numbers []int) int {
-    // your code here
 	result := 0
 	for _, v := range numbers {
 		result += v*v
