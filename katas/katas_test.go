@@ -5,6 +5,20 @@ import (
 	"testing"
 )
 
+func TestEvenOrOdd(t *testing.T){
+	got := EvenOrOdd(3)
+	want := "Odd"
+	assertString(t, got, want)
+}
+
+
+func TestBoolToWord(t *testing.T){
+	got := BoolToWord(true)
+	want := "Yes"
+	assertString(t, got, want)
+}
+
+
 func TestRemoveChar(t *testing.T){
 	got := RemoveChar("country")
 	want := "ountr"
